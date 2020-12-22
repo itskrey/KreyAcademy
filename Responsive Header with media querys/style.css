@@ -1,0 +1,138 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.mainContent{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.headerContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8vh;
+    background-color: #121212;
+    width: 100%;
+}
+
+.headerContent{
+    width: 95%;
+    height: 100%;
+    margin-left: 0;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoContainer{
+    height: 80%;
+    width: 40%;
+    margin-left: 2%;
+    margin-right: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo{
+    height: 50%;
+    color: white;
+}
+
+.menuItem{
+    margin-left: 2vw;
+}
+
+.menuItem:hover{
+    opacity: 0.8;
+}
+
+.menuItemLink{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: all 0.7s;
+}
+
+
+/*Menu Hamburguer*/
+
+.menuHamburguer{
+    display: none;
+    height: 25px;
+    width: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.line{
+    left: 0;
+    top: 50%;
+    position: absolute;
+    height: 2px;
+    border-radius: 1px;
+    width: 100%;
+    background-color: white;
+}
+
+.line:first-child{
+    top:0;
+}
+
+.line:last-child{
+    top: auto;
+    bottom: 0;
+}
+
+/*Media query para la versión móvil*/
+@media (max-width: 550px){
+
+
+    .menuHamburguer{
+        display: block;
+    }
+
+    #Menu.open{
+        background-color: #121212b0;
+        position: absolute;
+        top: 8vh;
+        min-width: 40%;
+        padding-left: 5%;
+        height: 92vh;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.8); 
+    }
+
+    .menuContainer{
+        background-color: #121212b0;
+        position: absolute;
+        top: 8vh;
+        min-width: 40%;
+        padding-left: 5%;
+        height: 92vh;
+        right: -100%;
+        display: flex;
+        flex-direction: column;
+        transition: all 0.7s;
+    }
+
+    .menuItem{
+        margin-top: 3vh;
+    }
+
+    .menuItemLink{
+        font-size: 2rem
+    }
+}
