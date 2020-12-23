@@ -1,10 +1,10 @@
-html,body{
+html, body{
     margin: 0;
     padding: 0;
 }
 
 body{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     overflow-x: hidden;
 }
@@ -16,22 +16,22 @@ body{
 }
 
 .headerContainer{
+    height: 8vh;
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    height: 8vh;
     background-color: #121212;
-    width: 100%;
 }
 
 .headerContent{
     width: 95%;
     height: 100%;
-    margin-left: 0;
+    margin-left: auto;
     margin-right: auto;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .logoContainer{
@@ -46,11 +46,10 @@ body{
 
 .logo{
     height: 50%;
-    color: white;
 }
 
 .menuItem{
-    margin-left: 2vw;
+    margin-left: 3vw;
 }
 
 .menuItem:hover{
@@ -59,13 +58,12 @@ body{
 
 .menuItemLink{
     text-decoration: none;
-    color: white;
     font-family: Arial, Helvetica, sans-serif;
-    animation: all 0.7s;
+    color: white;
 }
 
 
-/*Menu Hamburguer*/
+/*Menu hamburguer (MOBILE ONLY)*/
 
 .menuHamburguer{
     display: none;
@@ -75,18 +73,19 @@ body{
     cursor: pointer;
 }
 
+
 .line{
     left: 0;
     top: 50%;
     position: absolute;
-    height: 2px;
-    border-radius: 1px;
-    width: 100%;
     background-color: white;
+    height: 2px;
+    width: 100%;
+    border-radius: 1px;
 }
 
 .line:first-child{
-    top:0;
+    top: 0;
 }
 
 .line:last-child{
@@ -94,31 +93,19 @@ body{
     bottom: 0;
 }
 
-/*Media query para la versión móvil*/
-@media (max-width: 550px){
 
+/*Media query for mobile display*/
+
+@media (max-width: 600px){
 
     .menuHamburguer{
         display: block;
     }
 
-    #Menu.open{
-        background-color: #121212b0;
-        position: absolute;
-        top: 8vh;
-        min-width: 40%;
-        padding-left: 5%;
-        height: 92vh;
-        right: 0;
-        display: flex;
-        flex-direction: column;
-        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.8); 
-    }
-
     .menuContainer{
-        background-color: #121212b0;
+        background-color: #121212c7;
         position: absolute;
-        top: 8vh;
+        top: 8vh;/*Header height*/
         min-width: 40%;
         padding-left: 5%;
         height: 92vh;
@@ -128,11 +115,16 @@ body{
         transition: all 0.7s;
     }
 
+    #Menu.open{
+        right: 0;
+    }
+
+
     .menuItem{
         margin-top: 3vh;
     }
 
     .menuItemLink{
-        font-size: 2rem
+        font-size: 2rem;
     }
 }
