@@ -1,0 +1,152 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100%;
+    width: 100vw;
+}
+
+.headerSection{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8vh;
+    width: 100%;
+    background-color:transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.logoContainer{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    height: 40%;
+    width: auto;
+    margin-left: 2rem;
+}
+
+.menuContainer{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menuItem{
+    margin-right: 2rem;
+}
+
+.menuItemLink{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.menuItemButton{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.menuitem:last-child{
+    background-color: #00A769;
+    border-radius: 20px;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 12px #00a76a6e;
+}
+
+.menuItem:last-child:hover{
+    box-shadow: 0px 0px 18px #00a76a6e;
+}
+
+.heroSection{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(20deg, #000000, #1d1d1d);
+    display: flex;
+    position: relative;
+}
+
+.leftSide{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 8vw;
+}
+
+.rightSide{
+    width: 50%;
+    height: 100%;
+}
+
+.heroTextContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.mainTextHero{
+    font-size: 3.8rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 0;
+}
+
+.secondTextHero{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+    margin-top: 0;
+
+}
+
+.buttonHero{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    background-color: #00A769;
+    border-radius: 25px;
+    padding: 15px 25px;
+    box-shadow: 0px 0px 12px #00a76a6e;
+}
+
+.socialIconsContainer{
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 8vh;
+}
+
+.iconSocial{
+    height: 3.5vh;
+    width: 3.5vh;
+    background-color: transparent;
+    border: 2px solid #00A769;
+    border-radius: 2vh;
+    margin-right: 1rem;
+}
+
+.iconSocial:first-child{
+    margin-left: 3rem;
+}
+
