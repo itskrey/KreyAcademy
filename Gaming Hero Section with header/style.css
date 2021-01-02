@@ -1,7 +1,7 @@
 html, body{
     margin: 0;
     padding: 0;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
@@ -15,7 +15,7 @@ body{
     left: 0;
     height: 8vh;
     width: 100%;
-    background-color:transparent;
+    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +26,7 @@ body{
     height: 100%;
     width: 50%;
     display: flex;
-    align-items: center;
+    align-items:center;
 }
 
 .logo{
@@ -53,21 +53,15 @@ body{
     font-weight: 700;
 }
 
-.menuItemButton{
-    color: white;
-    text-decoration: none;
-    font-weight: 700;
-}
-
-.menuitem:last-child{
+.menuItem:last-child{
     background-color: #00A769;
     border-radius: 20px;
     padding: 10px 20px;
-    box-shadow: 0px 0px 12px #00a76a6e;
+    box-shadow: 0px 0px 12px #00A7696e;
 }
 
 .menuItem:last-child:hover{
-    box-shadow: 0px 0px 18px #00a76a6e;
+    box-shadow: 0px 0px 18px #00A7696e;
 }
 
 .heroSection{
@@ -88,15 +82,14 @@ body{
 }
 
 .rightSide{
-    width: 50%;
     height: 100%;
 }
 
 .heroTextContainer{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
+    align-items: flex-start;
 }
 
 .mainTextHero{
@@ -112,7 +105,6 @@ body{
     font-weight: 500;
     color: white;
     margin-top: 0;
-
 }
 
 .buttonHero{
@@ -123,11 +115,11 @@ body{
     background-color: #00A769;
     border-radius: 25px;
     padding: 15px 25px;
-    box-shadow: 0px 0px 12px #00a76a6e;
+    box-shadow: 0px 0px 12px #00A7696e;
 }
 
 .buttonHero:hover{
-    box-shadow: 0px 0px 18px #00a76a9a;
+    box-shadow: 0px 0px 18px #00A7696e;
 }
 
 .socialIconsContainer{
@@ -161,4 +153,3 @@ body{
 .iconSocial:first-child{
     margin-left: 3rem;
 }
-
