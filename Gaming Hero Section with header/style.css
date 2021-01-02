@@ -126,6 +126,10 @@ body{
     box-shadow: 0px 0px 12px #00a76a6e;
 }
 
+.buttonHero:hover{
+    box-shadow: 0px 0px 18px #00a76a9a;
+}
+
 .socialIconsContainer{
     position: absolute;
     display: flex;
@@ -144,6 +148,14 @@ body{
     border: 2px solid #00A769;
     border-radius: 2vh;
     margin-right: 1rem;
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.iconSocial:hover{
+    box-shadow: 0px 0px 12px #00A769;
 }
 
 .iconSocial:first-child{
