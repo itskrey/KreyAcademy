@@ -1,5 +1,7 @@
 :root{
     --main-color : #00AF00;
+    --main-color-less : #025202;
+    --main-color-shadow: #00af002f;
 }
 
 html, body{
@@ -210,6 +212,12 @@ body{
     align-items: center;
     overflow: hidden;
     border-radius: 20px;
+    cursor: pointer;
+}
+
+.teamContainer:hover .teamBackgroundImage{
+    transform: scale(1.1);
+    filter: grayscale(0);
 }
 
 .teamContainer:last-child{
@@ -221,6 +229,7 @@ body{
     object-position: bottom;
     object-fit: cover;
     filter: grayscale(1) brightness(0.4);
+    transition: all 0.5s;
 }
 
 
@@ -231,4 +240,152 @@ body{
     transform: translate(-50%, -50%);
     width: 40%;
     height: auto;
+    filter: drop-shadow(0 0 8px black);
+}
+
+
+/*MATCHES SECTION*/
+.matchesSection{
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    margin-top: 15rem;
+}
+
+.matchesSectionContainer{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.matchesContainer{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.matchContainer{
+    width: 33%;
+    height: 650px;
+    margin-right: 5rem;
+    background-color: black;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid transparent;
+
+    /*Background properties*/
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: luminosity;
+    transition: all 0.5s linear;
+}
+
+.matchContainer:last-child{
+    margin-right: 0;
+}
+
+.matchContainer:hover{
+    border-color: var(--main-color);
+    box-shadow: 0px 0px 35px 1px var(--main-color-shadow);
+}
+
+.gameLogoContainer{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.matchGameLogo{
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    object-position: center;
+}
+
+.teamsMatchContainer{
+    height: 45%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.leftTeam{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.leftTeamLogo{
+    height: 60%;
+    object-fit: contain;
+}
+
+.teamName{
+    font-weight: 900;
+    color: white;
+    text-transform: uppercase;
+    font-size: calc(0.5vw + 14px);
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.rightTeam{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rightTeamLogo{
+    height: 60%;
+    object-fit: contain;
+}
+
+.matchInfoContainer{
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.matchDate{
+    color: white;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+.matchTime{
+    font-size: calc(0.5vw + 18px);
+    color: white;
+    font-weight: 800;
+}
+
+.viewMatchLink{
+    background-color: var(--main-color-less);
+    padding: 10px 30px;
+    border-radius: 20px;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.5s linear;
+}
+
+.viewMatchLink:hover{
+    box-shadow: 0px 0px 25px 1px var(--main-color-shadow);
 }
