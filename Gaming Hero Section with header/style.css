@@ -1,13 +1,69 @@
+:root{
+    --main-color : #00AF00;
+}
+
 html, body{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+/*COMMON STYLES FOR THEME*/
+h1{
+    font-size: calc(2vw + 20px)
+}
+
+h2{
+    font-size: calc(2vw + 18px);
+    font-weight: 900;
+    color: white;
+    margin-bottom: 0;
+}
+
+h4{
+    font-size: calc(0.5vw + 12px);
+    font-weight: 500;
+    opacity: 0.7;
+    color: white;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
+
+
+
 body{
     height: 100%;
-    width: 100vw;
+    width: 100%;
+    overflow-x: hidden;
 }
+
+.backgroundContainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(20deg, #000000fa, #1d1d1dfa);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    z-index: -1;
+}
+
+
+.backgroundImage{
+    height: auto;
+    max-width: 2000px;
+    min-width: 1780px;
+    transform: rotate(-10deg) translate(30%, -45%);
+    position: absolute;
+    top: 60%;
+    right: 50%;
+    opacity: 0.01;
+}
+
 
 .headerSection{
     position: absolute;
@@ -30,7 +86,7 @@ body{
 }
 
 .logo{
-    height: 40%;
+    height: 80%;
     width: auto;
     margin-left: 2rem;
 }
@@ -54,7 +110,7 @@ body{
 }
 
 .menuItem:last-child{
-    background-color: #00A769;
+    background-color: var(--main-color);
     border-radius: 20px;
     padding: 10px 20px;
     box-shadow: 0px 0px 12px #00A7696e;
@@ -67,7 +123,6 @@ body{
 .heroSection{
     height: 100vh;
     width: 100%;
-    background: linear-gradient(20deg, #000000, #1d1d1d);
     display: flex;
     position: relative;
 }
@@ -93,7 +148,6 @@ body{
 }
 
 .mainTextHero{
-    font-size: 3.8rem;
     text-transform: uppercase;
     font-weight: 900;
     color: white;
@@ -112,7 +166,7 @@ body{
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 700;
-    background-color: #00A769;
+    background-color: var(--main-color);
     border-radius: 25px;
     padding: 15px 25px;
     box-shadow: 0px 0px 12px #00A7696e;
@@ -122,34 +176,59 @@ body{
     box-shadow: 0px 0px 18px #00A7696e;
 }
 
-.socialIconsContainer{
-    position: absolute;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    left: 0;
-    bottom: 0;
+
+/*TEAMS SECTION*/
+.teamsSection{
     width: 100%;
-    height: 8vh;
+    height: auto;
+    z-index: 1;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
 }
 
-.iconSocial{
-    height: 3.5vh;
-    width: 3.5vh;
-    background-color: transparent;
-    border: 2px solid #00A769;
-    border-radius: 2vh;
-    margin-right: 1rem;
-    background-position: center;
-    background-size: 60%;
-    background-repeat: no-repeat;
-    cursor: pointer;
+
+.teamsSectionContainer{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
-.iconSocial:hover{
-    box-shadow: 0px 0px 12px #00A769;
+.teamsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
 }
 
-.iconSocial:first-child{
-    margin-left: 3rem;
+.teamContainer{
+    width: 33%;
+    height: 300px;
+    position: relative;
+    margin-right: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.teamContainer:last-child{
+    margin-right: 0;
+}
+
+.teamBackgroundImage{
+    width: 100%;
+    object-position: bottom;
+    object-fit: cover;
+    filter: grayscale(1) brightness(0.4);
+}
+
+
+.gameLogo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: auto;
 }
