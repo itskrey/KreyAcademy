@@ -38,9 +38,30 @@ h4{
 
 
 body{
-    height: 100%;
     width: 100%;
     overflow-x: hidden;
+    position: relative;
+}
+
+.shapeBackground{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: auto;
+    width: 10%;
+    z-index: -1;
+    transform: scaleX(-1);
+    min-width: 200px;
+}
+
+.shapeBackground2{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    width: 10%;
+    z-index: -1;
+    min-width: 200px;
 }
 
 .backgroundContainer{
