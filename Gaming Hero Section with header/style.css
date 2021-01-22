@@ -4,16 +4,41 @@
     --main-color-shadow: #00af002f;
 }
 
+/*Scrollbar changes*/
+/* width */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #121212;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 12px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--main-color-less);
+  }
+
+
+
 html, body{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
 }
 
 
 /*COMMON STYLES FOR THEME*/
 h1{
-    font-size: calc(2vw + 20px)
+    font-size: calc(2vw + 30px)
 }
 
 h2{
@@ -56,7 +81,7 @@ body{
 
 .shapeBackground2{
     position: absolute;
-    right: 0;
+    right: -2px;
     bottom: 0;
     height: auto;
     width: 10%;
@@ -90,7 +115,7 @@ body{
 
 
 .headerSection{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 8vh;
@@ -100,6 +125,7 @@ body{
     justify-content: center;
     align-items: center;
     z-index: 1;
+    transition: all 0.5s;
 }
 
 .logoContainer{
@@ -144,31 +170,76 @@ body{
     box-shadow: 0px 0px 18px #00A7696e;
 }
 
+.hamburguerMenu{
+    display: none;
+    height: 34%;
+    width: 40px;
+    position: relative;
+    margin-right: 3%;
+}
+
+.line{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    height: 2px;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.line:first-child{
+    top: 0;
+}
+
+.line:last-child{
+    top: auto;
+    bottom: 0;
+}
+
+
+/*HERO SECTION*/
+
 .heroSection{
     height: 100vh;
     width: 100%;
     display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
     position: relative;
 }
 
-.leftSide{
-    width: 100%;
+
+.backgroundHeroVideo{
     height: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: 8vw;
+    object-position: center;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    opacity: 0.5;
+    left: 0;
+
 }
 
-.rightSide{
+.leftSide{
+    width: 80%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .heroTextContainer{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
 }
 
 .mainTextHero{
@@ -176,13 +247,17 @@ body{
     font-weight: 900;
     color: white;
     margin-bottom: 0;
+    text-shadow: 0px 0px 12px black;
 }
 
 .secondTextHero{
-    font-size: 1.5rem;
+    font-size: calc(0.5vw + 15px);
     font-weight: 500;
     color: white;
+    text-shadow: 0px 0px 12px black;
     margin-top: 0;
+    text-transform: none;
+    margin-bottom: 1rem;
 }
 
 .buttonHero{
@@ -666,4 +741,148 @@ form{
 .sendButton:hover{
     background-color: var(--main-color);
     color: #121212;
+}
+
+
+
+/*MEDIA QUERYS FOR MOBILE*/
+
+@media (max-width: 600px){
+
+    html{
+        overflow-x: hidden;
+    }
+
+    .hamburguerMenu{
+        display: block;
+    }
+
+    .menuItem{
+        display: none;
+    }
+
+    .menuItem:last-child{
+        transform: scale(0.8);
+        margin-right: 1rem;
+        display: block;
+    }
+
+    .teamsContainer{
+        flex-direction: column;
+        margin-top: 1.5rem;
+    }
+
+    .teamContainer{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 200px;
+        margin-bottom: 1.5rem;
+    }
+
+    .teamBackgroundImage{
+        width: 100%!important;
+        height: auto!important;
+    }
+
+    .teamContainer:last-child{
+        margin-right: auto;
+    }
+
+    /*MATCHES SECTION*/
+    .matchesSection{
+        margin-top: 5rem;
+    }
+
+    .matchesContainer{
+        margin-top: 1.5rem;
+        flex-direction: column;
+    }
+
+    .matchContainer{
+        width: 100%;
+        height: 100px;
+        margin-right: 0;
+        flex-direction: row;
+        margin-bottom: 1.5rem;
+    }
+
+    .gameLogoContainer{
+        height: 100%;
+        width: 25%;
+    }
+
+    .matchGameLogo{
+        width: 70%;
+        height: auto;
+    }
+
+    .teamsMatchContainer{
+        width: 50%;
+        height: 100%;
+    }
+
+    .teamName{
+        font-size: 11px;
+        margin-top: 0.3rem;
+    }
+
+    .leftTeamLogo{
+        height: 50%;
+    }
+
+    .rightTeamLogo{
+        height: 50%;
+    }
+
+    .matchInfoContainer{
+        height: 100%;
+        width: 25%;
+    }
+
+    .matchDate{
+        font-size: 10px;
+    }
+
+    .matchTime{
+        font-size: 16px;
+    }
+
+    .viewMatchLink{
+        margin-top: 0;
+        transform: scale(0.5);
+    }
+
+    /*NEWS SECTION*/
+    .newsSection{
+        margin-top: 5rem;
+    }
+
+    .newsContainer{
+        flex-direction: column;
+    }
+
+    .newContainer{
+        width: 100%;
+        height: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1.5rem;
+    }
+
+
+    /*CONTACT SECTION*/
+    .contactSection{
+        margin-top: 5rem;
+    }
+
+    .contactContentContainer{
+        margin-top: 1.5rem;
+    }
+
+    .sendButton{
+        margin-top: 1.5rem;
+        width: 50%;
+        height: 40px;
+    }
 }

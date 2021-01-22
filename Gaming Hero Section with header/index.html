@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>Gaming Hero</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
     </head>
 
@@ -8,7 +9,7 @@
         <div class="backgroundContainer">
             <img src="GamingLogo.png" alt="" class="backgroundImage">
         </div>
-        <div class="headerSection">
+        <div class="headerSection" id="Header">
             <div class="logoContainer">
                 <img src="GamingLogo.png" alt="" class="logo">
             </div>
@@ -19,19 +20,23 @@
                 <span class="menuItem"><a href="" class="menuItemLink">News</a></span>
                 <span class="menuItem"><a href="" class="menuItemLink">Contact</a></span>
             </div>
+            <div class="hamburguerMenu">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+
         </div>
 
         <!--Hero Section-->
         <div class="heroSection">
+            <video playsinline autoplay loop muted src="VideoBackground.webm" class="backgroundHeroVideo"></video>
             <div class="leftSide">
                 <div class="heroTextContainer">
                     <h1 class="mainTextHero">Game changing</h1>
                     <h2 class="secondTextHero">Make your gaming experience reach another level with us.</h2>
                     <a href="#" class="buttonHero">See More</a>
                 </div>
-            </div>
-            <div class="rightSide">
-                
             </div>
         </div>
 
@@ -217,7 +222,7 @@
                             <span class="inputLine2"></span>
                         </div>
 
-                        <input class="sendButton" type="button" value="send">
+                        <input class="sendButton" type="submit" value="send">
                     </form>
                 </div>
             </div>
