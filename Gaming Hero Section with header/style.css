@@ -18,6 +18,7 @@ h1{
 
 h2{
     font-size: calc(2vw + 18px);
+    text-transform: uppercase;
     font-weight: 900;
     color: white;
     margin-bottom: 0;
@@ -388,4 +389,260 @@ body{
 
 .viewMatchLink:hover{
     box-shadow: 0px 0px 25px 1px var(--main-color-shadow);
+}
+
+
+
+/*NEWS SECTION*/
+.newsSection{
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    margin-top: 15rem;
+}
+
+.newsSectionContainer{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.newsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.newContainer{
+    width: 33%;
+    margin-right: 5rem;
+    height: 700px;
+    border-radius: 20px;
+    position: relative;
+
+    /*Background properties*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.newContainer:last-child{
+    margin-right: 0;
+}
+
+.newContainer:hover .viewMoreContainer{
+    z-index: 1;
+    opacity: 0.6;
+}
+
+.newContainer:hover .viewMoreNewsButton{
+    z-index: 1;
+    opacity: 1;
+}
+
+.newContainer:hover .newInfoContainer{
+    filter: brightness(0.3);
+}
+
+.viewMoreContainer{
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    background-color: black;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.viewMoreNewsButton{
+    position: absolute;
+    top: 50%;
+    opacity: 0;
+    z-index: -1;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 8px;
+    text-align: center;
+    padding: 15px 100px;
+    width: 30%;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+
+.viewMoreNewsButton:hover{
+    color: #121212;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);;
+}
+
+
+
+.newInfoContainer{
+    width: 60%;
+    margin-left: 5%;
+    margin-right: auto;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    margin-bottom: 5%;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s;
+}
+
+.newTitle{
+    font-size: calc(0.5vw + 18px);
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+}
+
+.newDescription{
+    font-weight: 500;
+    opacity: 0.7;
+    margin-bottom: 0.5rem;
+}
+
+.newDate{
+    font-size: calc(0.5vw + 8px);
+}
+
+
+/*CONTACT SECTION*/
+.contactSection{
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    margin-top: 15rem;
+}
+
+.contactSectionContainer{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.contactContentContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.firstLineForm{
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.inputContainer{
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    margin-right: 5rem;
+    margin-top: 2rem;
+}
+
+.inputContainer:nth-of-type(2){
+    margin-right: 0;
+}
+
+.inputLabel{
+    color: white;
+    font-weight: 600;
+    font-size: calc(0.5vw + 10px);
+}
+
+.nameInput{
+    height: 40px;
+    width: 100%;
+    border: none;
+    background-color: #4b4b4b21;
+    outline: none;
+    color: white;
+    margin-top: 1rem;
+}
+
+.nameInput:focus ~ .inputLine2{
+    width: 100%;
+}
+
+.inputLine{
+    background-color: white;
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.inputLine2{
+    background-color: var(--main-color);
+    height: 3px;
+    z-index: 2;
+    width: 0%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition:all 0.3s linear;
+}
+
+
+.textArea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    resize: none;
+    color: white;
+    background-color: #4b4b4b21;
+    margin-top: 1rem;
+}
+
+.textArea:focus ~ .inputLine2{
+    width: 100%;
+}
+
+.sendButton{
+    padding: 10px 30px;
+    border-radius: 20px;
+    outline: none;
+    background-color: var(--main-color-less);
+    border-color: transparent;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 3rem;
+    transition: all 0.5s;
+}
+
+.sendButton:hover{
+    background-color: var(--main-color);
+    color: #121212;
 }
