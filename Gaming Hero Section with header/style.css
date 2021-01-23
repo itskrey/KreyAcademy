@@ -74,7 +74,7 @@ body{
     top: 50%;
     height: auto;
     width: 10%;
-    z-index: -1;
+    z-index: 1;
     transform: scaleX(-1);
     min-width: 200px;
 }
@@ -85,7 +85,7 @@ body{
     bottom: 0;
     height: auto;
     width: 10%;
-    z-index: -1;
+    z-index: 1;
     min-width: 200px;
 }
 
@@ -124,7 +124,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1;
+    z-index: 99;
     transition: all 0.5s;
 }
 
@@ -280,9 +280,10 @@ body{
 .teamsSection{
     width: 100%;
     height: auto;
-    z-index: 1;
+    z-index: 2;
     margin-bottom: 5rem;
     margin-top: 5rem;
+    position: relative;
 }
 
 
@@ -345,8 +346,9 @@ body{
 .matchesSection{
     width: 100%;
     height: auto;
-    z-index: 1;
+    z-index: 2;
     margin-top: 15rem;
+    position: relative;
 }
 
 .matchesSectionContainer{
@@ -365,7 +367,8 @@ body{
 
 .matchContainer{
     width: 33%;
-    height: 650px;
+    height: 40vw;
+    max-height: 650px;
     margin-right: 5rem;
     background-color: black;
     border-radius: 30px;
@@ -493,8 +496,9 @@ body{
 .newsSection{
     width: 100%;
     height: auto;
-    z-index: 1;
+    z-index: 2;
     margin-top: 15rem;
+    position: relative;
 }
 
 .newsSectionContainer{
@@ -514,7 +518,8 @@ body{
 .newContainer{
     width: 33%;
     margin-right: 5rem;
-    height: 700px;
+    height: 45vw;
+    max-height: 700px;
     border-radius: 20px;
     position: relative;
 
@@ -616,8 +621,9 @@ body{
 .contactSection{
     width: 100%;
     height: auto;
-    z-index: 1;
+    z-index: 2;
     margin-top: 15rem;
+    position: relative;
 }
 
 .contactSectionContainer{
@@ -747,7 +753,7 @@ form{
 
 /*MEDIA QUERYS FOR MOBILE*/
 
-@media (max-width: 600px){
+@media (max-width: 1000px){
 
     html{
         overflow-x: hidden;
@@ -778,11 +784,6 @@ form{
         margin-right: auto;
         height: 200px;
         margin-bottom: 1.5rem;
-    }
-
-    .teamBackgroundImage{
-        width: 100%!important;
-        height: auto!important;
     }
 
     .teamContainer:last-child{

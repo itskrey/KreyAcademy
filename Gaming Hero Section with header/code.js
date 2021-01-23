@@ -1,6 +1,12 @@
 $(window).ready(function(){
-    var teamsHeight = $('#Teams').offset().top;
-    var top = teamsHeight+'px';
+    var heroHeight = $('#Hero').innerHeight();
+    var top = heroHeight+'px';
+    document.querySelector('#ShapeLeft').style.top= top;
+});
+
+$(window).resize(function(){
+    var heroHeight = $('#Hero').innerHeight();
+    var top = heroHeight+'px';
     document.querySelector('#ShapeLeft').style.top= top;
 });
 
