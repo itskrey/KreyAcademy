@@ -1,31 +1,8 @@
 :root{
-    --main-color : #00AF00;
-    --main-color-less : #025202;
+    --main-color: #00AF00;
+    --main-color-less: #025202;
     --main-color-shadow: #00af002f;
 }
-
-/*Scrollbar changes*/
-/* width */
-::-webkit-scrollbar {
-    width: 12px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #121212;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: var(--main-color);
-    border-radius: 12px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: var(--main-color-less);
-  }
-
 
 
 html, body{
@@ -35,10 +12,29 @@ html, body{
     width: 100vw;
 }
 
+/*Scrollbar styles*/
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-track{
+    background: #121212;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--main-color);
+    border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: var(--main-color-less);
+}
+
+
 
 /*COMMON STYLES FOR THEME*/
 h1{
-    font-size: calc(2vw + 30px)
+    font-size: calc(2vw + 30px);
 }
 
 h2{
@@ -56,10 +52,8 @@ h4{
     color: white;
     margin-bottom: 0;
     margin-top: 0;
+
 }
-
-
-
 
 
 body{
@@ -89,6 +83,8 @@ body{
     min-width: 200px;
 }
 
+
+
 .backgroundContainer{
     position: fixed;
     top: 0;
@@ -100,7 +96,6 @@ body{
     overflow: hidden;
     z-index: -1;
 }
-
 
 .backgroundImage{
     height: auto;
@@ -132,7 +127,7 @@ body{
     height: 100%;
     width: 50%;
     display: flex;
-    align-items:center;
+    align-items: center;
 }
 
 .logo{
@@ -142,8 +137,8 @@ body{
 }
 
 .menuContainer{
-    width: 50%;
     height: 100%;
+    width: 50%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -163,11 +158,7 @@ body{
     background-color: var(--main-color);
     border-radius: 20px;
     padding: 10px 20px;
-    box-shadow: 0px 0px 12px #00A7696e;
-}
-
-.menuItem:last-child:hover{
-    box-shadow: 0px 0px 18px #00A7696e;
+    box-shadow: 0 0 12px var(--main-color-shadow);
 }
 
 .hamburguerMenu{
@@ -175,7 +166,7 @@ body{
     height: 34%;
     width: 40px;
     position: relative;
-    margin-right: 3%;
+    margin-right: 2rem;
 }
 
 .line{
@@ -200,7 +191,6 @@ body{
 
 
 /*HERO SECTION*/
-
 .heroSection{
     height: 100vh;
     width: 100%;
@@ -211,16 +201,14 @@ body{
     position: relative;
 }
 
-
-.backgroundHeroVideo{
+.backgroundVideo{
     height: 100%;
-    object-position: center;
     object-fit: cover;
+    object-position: center;
     position: absolute;
     top: 0;
-    opacity: 0.5;
     left: 0;
-
+    opacity: 0.5;
 }
 
 .leftSide{
@@ -230,15 +218,13 @@ body{
     justify-content: center;
     align-items: center;
     z-index: 1;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .heroTextContainer{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     text-align: center;
 }
 
@@ -247,14 +233,14 @@ body{
     font-weight: 900;
     color: white;
     margin-bottom: 0;
-    text-shadow: 0px 0px 12px black;
+    text-shadow: 0 0 12px black;
 }
 
 .secondTextHero{
     font-size: calc(0.5vw + 15px);
     font-weight: 500;
     color: white;
-    text-shadow: 0px 0px 12px black;
+    text-shadow: 0 0 12px black;
     margin-top: 0;
     text-transform: none;
     margin-bottom: 1rem;
@@ -262,17 +248,18 @@ body{
 
 .buttonHero{
     color: white;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 700;
     background-color: var(--main-color);
-    border-radius: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
     padding: 15px 25px;
-    box-shadow: 0px 0px 12px #00A7696e;
+    border-radius: 25px;
+    box-shadow: 0 0 12px var(--main-color-shadow);
+    transition: all 0.5s;
 }
 
 .buttonHero:hover{
-    box-shadow: 0px 0px 18px #00A7696e;
+    box-shadow: 0 0 18px var(--main-color-shadow);
 }
 
 
@@ -286,15 +273,15 @@ body{
     position: relative;
 }
 
-
 .teamsSectionContainer{
     width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .teamsContainer{
     display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
     margin-top: 3rem;
@@ -313,23 +300,22 @@ body{
     cursor: pointer;
 }
 
-.teamContainer:hover .teamBackgroundImage{
-    transform: scale(1.1);
-    filter: grayscale(0);
-}
-
 .teamContainer:last-child{
     margin-right: 0;
 }
 
 .teamBackgroundImage{
     width: 100%;
-    object-position: bottom;
+    object-position: center;
     object-fit: cover;
     filter: grayscale(1) brightness(0.4);
     transition: all 0.5s;
 }
 
+.teamContainer:hover .teamBackgroundImage{
+    transform: scale(1.1);
+    filter: none;
+}
 
 .gameLogo{
     position: absolute;
@@ -338,23 +324,24 @@ body{
     transform: translate(-50%, -50%);
     width: 40%;
     height: auto;
-    filter: drop-shadow(0 0 8px black);
+    filter: drop-shadow(0 0 9px black);
 }
+
 
 
 /*MATCHES SECTION*/
 .matchesSection{
     width: 100%;
-    height: auto;
-    z-index: 2;
     margin-top: 15rem;
+    height: auto;
     position: relative;
+    z-index: 2;
 }
 
 .matchesSectionContainer{
     width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .matchesContainer{
@@ -377,12 +364,13 @@ body{
     align-items: center;
     flex-direction: column;
     border: 1px solid transparent;
+    cursor: pointer;
 
-    /*Background properties*/
+    /*Background Properties*/
     background-position: center;
     background-size: cover;
     background-blend-mode: luminosity;
-    transition: all 0.5s linear;
+    transition: all 0.5s;
 }
 
 .matchContainer:last-child{
@@ -391,7 +379,7 @@ body{
 
 .matchContainer:hover{
     border-color: var(--main-color);
-    box-shadow: 0px 0px 35px 1px var(--main-color-shadow);
+    box-shadow: 0 0 35px 1px var(--main-color-shadow);
 }
 
 .gameLogoContainer{
@@ -404,10 +392,10 @@ body{
 
 .matchGameLogo{
     height: 100%;
-    width: auto;
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
 }
+
 
 .teamsMatchContainer{
     height: 45%;
@@ -416,7 +404,6 @@ body{
     justify-content: center;
     align-items: center;
 }
-
 
 .leftTeam{
     width: 50%;
@@ -430,14 +417,6 @@ body{
 .leftTeamLogo{
     height: 60%;
     object-fit: contain;
-}
-
-.teamName{
-    font-weight: 900;
-    color: white;
-    text-transform: uppercase;
-    font-size: calc(0.5vw + 14px);
-    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
 }
 
 .rightTeam{
@@ -454,8 +433,18 @@ body{
     object-fit: contain;
 }
 
+.teamName{
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+    font-size: calc(0.5vw + 14px);
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+
 .matchInfoContainer{
     height: 25%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -483,28 +472,27 @@ body{
     color: white;
     font-weight: 700;
     text-transform: uppercase;
-    transition: all 0.5s linear;
+    transition: all 0.5s;
 }
 
 .viewMatchLink:hover{
-    box-shadow: 0px 0px 25px 1px var(--main-color-shadow);
+    box-shadow: 0 0 25px 1px var(--main-color-shadow);
 }
-
 
 
 /*NEWS SECTION*/
 .newsSection{
     width: 100%;
     height: auto;
-    z-index: 2;
     margin-top: 15rem;
     position: relative;
+    z-index: 2;
 }
 
 .newsSectionContainer{
     width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .newsContainer{
@@ -517,16 +505,16 @@ body{
 
 .newContainer{
     width: 33%;
-    margin-right: 5rem;
     height: 45vw;
+    margin-right: 5rem;
     max-height: 700px;
     border-radius: 20px;
     position: relative;
 
-    /*Background properties*/
+    /*BAckground properties*/
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .newContainer:last-child{
@@ -547,6 +535,7 @@ body{
     filter: brightness(0.3);
 }
 
+
 .viewMoreContainer{
     height: 100%;
     width: 100%;
@@ -555,14 +544,15 @@ body{
     z-index: -1;
     opacity: 0;
     transition: all 0.5s;
+
 }
 
 .viewMoreNewsButton{
     position: absolute;
     top: 50%;
-    opacity: 0;
-    z-index: -1;
     left: 50%;
+    z-index: -1;
+    opacity: 0;
     transform: translate(-50%, -50%);
     background-color: transparent;
     border: 2px solid white;
@@ -578,11 +568,9 @@ body{
 
 .viewMoreNewsButton:hover{
     color: #121212;
-    background-color: rgb(255, 255, 255);
-    border-color: rgb(255, 255, 255);;
+    background-color: white;
+    
 }
-
-
 
 .newInfoContainer{
     width: 60%;
@@ -594,9 +582,9 @@ body{
     align-items: flex-start;
     flex-direction: column;
     position: absolute;
-    margin-bottom: 5%;
     bottom: 0;
     left: 0;
+    margin-bottom: 5%;
     transition: all 0.5s;
 }
 
@@ -617,6 +605,7 @@ body{
 }
 
 
+
 /*CONTACT SECTION*/
 .contactSection{
     width: 100%;
@@ -628,16 +617,8 @@ body{
 
 .contactSectionContainer{
     width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-.contactContentContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 form{
@@ -648,12 +629,11 @@ form{
     flex-direction: column;
 }
 
-
 .firstLineForm{
     width: 100%;
     display: flex;
-    justify-items: center;
     align-items: center;
+    justify-content: center;
 }
 
 .inputContainer{
@@ -663,7 +643,6 @@ form{
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    position: relative;
     margin-right: 5rem;
     margin-top: 2rem;
 }
@@ -688,10 +667,6 @@ form{
     margin-top: 1rem;
 }
 
-.nameInput:focus ~ .inputLine2{
-    width: 100%;
-}
-
 .inputLine{
     background-color: white;
     height: 3px;
@@ -709,19 +684,21 @@ form{
     position: absolute;
     bottom: 0;
     left: 0;
-    transition:all 0.3s linear;
+    transition: all 0.3s linear;
 }
 
+.nameInput:focus ~ .inputLine2{
+    width: 100%;
+}
 
 .textArea{
     height: 100%;
     width: 100%;
     border: none;
-    background-color: transparent;
+    background-color: #4b4b4b21;
     outline: none;
     resize: none;
     color: white;
-    background-color: #4b4b4b21;
     margin-top: 1rem;
 }
 
@@ -735,7 +712,7 @@ form{
     outline: none;
     background-color: var(--main-color-less);
     border-color: transparent;
-    color: rgba(255, 255, 255, 1);
+    color: white;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
@@ -751,16 +728,12 @@ form{
 
 
 
-/*MEDIA QUERYS FOR MOBILE*/
+
 
 @media (max-width: 1000px){
-
-    html{
-        overflow-x: hidden;
-    }
-
     .hamburguerMenu{
         display: block;
+        cursor: pointer;
     }
 
     .menuItem{
@@ -769,8 +742,13 @@ form{
 
     .menuItem:last-child{
         transform: scale(0.8);
-        margin-right: 1rem;
         display: block;
+        margin-right: 1rem;
+    }
+
+    /*TEAMS*/
+    .teamsSectionContainer{
+        width: 80%;
     }
 
     .teamsContainer{
@@ -787,17 +765,23 @@ form{
     }
 
     .teamContainer:last-child{
+        margin-bottom: 0;
         margin-right: auto;
     }
+
 
     /*MATCHES SECTION*/
     .matchesSection{
         margin-top: 5rem;
     }
 
+    .matchesSectionContainer{
+        width: 80%;
+    }
+
     .matchesContainer{
-        margin-top: 1.5rem;
         flex-direction: column;
+        margin-top: 1.5rem;
     }
 
     .matchContainer{
@@ -814,18 +798,25 @@ form{
     }
 
     .matchGameLogo{
-        width: 70%;
-        height: auto;
+        height: 70%;
+        width: auto;
     }
 
-    .teamsMatchContainer{
-        width: 50%;
-        height: 100%;
+    .teamsContainer{
+        width: 100%;
     }
 
     .teamName{
         font-size: 11px;
         margin-top: 0.3rem;
+    }
+
+    .leftTeam{
+        height: 100%;
+    }
+
+    .rightTeam{
+        height: 100%;
     }
 
     .leftTeamLogo{
@@ -854,9 +845,14 @@ form{
         transform: scale(0.5);
     }
 
+
     /*NEWS SECTION*/
     .newsSection{
         margin-top: 5rem;
+    }
+
+    .newsSectionContainer{
+        width: 80%;
     }
 
     .newsContainer{
@@ -877,6 +873,10 @@ form{
         margin-top: 5rem;
     }
 
+    .contactSectionContainer{
+        width: 80%;
+    }
+
     .contactContentContainer{
         margin-top: 1.5rem;
     }
@@ -886,4 +886,8 @@ form{
         width: 50%;
         height: 40px;
     }
+
+
+
+
 }
