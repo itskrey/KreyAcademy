@@ -18,7 +18,7 @@ body{
     width: 33.7vh;
     background: linear-gradient(150deg, #171717, black, black, black);
     border-radius: 20px;
-    box-shadow: 0p 8px 22px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 8px 22px rgba(0,0,0,0.5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,12 +52,12 @@ body{
 }
 
 .product-info-container{
-    padding-top: 1rem;
     height: 50%;
     width: 100%;
+    padding-top: 1rem;
     border-radius: inherit;
-    background: linear-gradient(1280deg, rgba(255,255,255,0.15), rgba(128,128,128,0.12));
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.16);
+    background: linear-gradient(120deg, rgba(255,255,255,0.15), rgba(128,128,128,0.15));
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.16);
     display: flex;
     justify-content: center;
     align-items: center;
