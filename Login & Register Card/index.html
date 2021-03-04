@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login & Register</title>
+</head>
+<body>
+
+    <div class="container-page" id="Container">
+        <div class="login-container" id="LoginContainer">
+            <h1 class="title">Login</h1>
+            <form action="">
+                <div class="input-line-container">
+                    <span class="name-input">Username</span>
+                    <input type="text" name="username" class="input-line" id="">
+                </div>
+                <div class="input-line-container">
+                    <span class="name-input">Password</span>
+                    <input type="text" name="password" class="input-line" id="">
+                </div>
+                <input type="button" value="login" class="button-login">
+                <div id="Register" class="button-second">Register</div>
+            </form>
+        </div>
+
+        <div class="register-container" id="RegisterContainer">
+            <h1 class="title">Register</h1>
+            <form action="">
+                <div class="input-line-container">
+                    <span class="name-input">Username</span>
+                    <input type="text" name="username" class="input-line" id="">
+                </div>
+                <div class="input-line-container">
+                    <span class="name-input">Email</span>
+                    <input type="email" name="email" class="input-line" id="">
+                </div>
+                <div class="input-line-container">
+                    <span class="name-input">Password</span>
+                    <input type="text" name="password" class="input-line" id="">
+                </div>
+                <input type="button" value="register" class="button-login">
+                <span id="Login" class="button-second">Already have an account?</span>
+            </form>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="code.js"></script>
+</body>
+</html>

@@ -13,7 +13,6 @@ body{
     align-items: center;
 }
 
-
 .overlay{
     height: fit-content;
     width: 15vw;
@@ -24,7 +23,7 @@ body{
 }
 
 .music-player-container{
-    background: linear-gradient(30deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.85));
+    background: linear-gradient(30deg, rgba(0,0,0,0.65), rgba(0,0,0,0.85));
     backdrop-filter: blur(10px);
     height: 100%;
     width: 100%;
@@ -34,7 +33,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.35);
 }
 
 .image-music-container{
@@ -46,7 +45,6 @@ body{
 
 .song-image{
     width: 100%;
-    height: auto;
     border-radius: inherit;
 }
 
@@ -65,10 +63,9 @@ body{
 .song-author{
     margin-top: 0.1rem;
     font-size: 12px;
-    color: rgb(168, 167, 167);
+    color: rgb(167, 167, 167);
     letter-spacing: 0.1px;
 }
-
 
 .controls-music-container{
     width: 80%;
@@ -97,8 +94,8 @@ body{
 }
 
 .progress-bar::after{
-    position: absolute;
     content: "";
+    position: absolute;
     height: 100%;
     border-radius: inherit;
     width: 30%;

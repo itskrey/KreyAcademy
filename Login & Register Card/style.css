@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #121212;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-page{
+    height: 50vh;
+    width: 20vw;
+    border-radius: 20px;
+    background: linear-gradient(90deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), linear-gradient(150deg, #13F4D9, #2AA4CE);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    transition: all 0.8s;
+}
+
+.login-container{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.register-container{
+    width: 100%;
+    height: fit-content;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+form{
+    width: 80%;
+    margin: auto;
+}
+
+.input-line-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.name-input{
+    font-size: 12px;
+}
+
+.input-line{
+    width: 100%;
+    height: 30px;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #CBCBCB;
+    outline: none;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.button-login{
+    width: 100%;
+    height: 45px;
+    border-radius: 55px;
+    background: linear-gradient(150deg, #13F4D9, #2AA4Ce);
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.button-second{
+    width: 100%;
+    height: 45px;
+    border-radius: 55px;
+    background: transparent;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 2px solid white;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    opacity: 0.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-login:hover{
+    box-shadow: 0px 0px 8px #2aa5cea4;
+}
+
+.button-second:hover{
+    opacity: 1;
+}

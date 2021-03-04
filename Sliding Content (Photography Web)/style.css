@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Shippori Mincho B1', serif;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+    background-color: #121212;
+    position: relative;
+}
+
+.website-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    padding: 0 60px;
+    box-sizing: border-box;
+    color: white;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}
+
+.menu-container{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.menu-container ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menu-item{
+    list-style: none;
+
+}
+
+.menu-item a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.bottom-socials{
+    width: 20%;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem;
+    z-index: 10;
+}
+
+.social-icon{
+    height: 80%;
+    filter: invert(1);
+    opacity: 0.6;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.social-icon:hover{
+    opacity: 1;
+}
+
+
+.control-left{
+    position: absolute;
+    left: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: white;
+    opacity: 0.6;
+    transition: 0.5s;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.control-left:hover , .control-right:hover{
+    opacity: 1;
+}
+
+.control-right{
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: white;
+    opacity: 0.6;
+    transition: 0.5s;
+    z-index: 10;
+    cursor: pointer;
+}
+
+
+.slides-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#Image{
+    transition:opacity 0.3s;
+}
+
+.background-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    width: 100%;
+    height: auto;
+    transition:opacity 0.3s;
+}
+
+.text-container{
+    width: 600px;
+    height: fit-content;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#Slider{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    transition: 0.5s;
+}
+
+.text-slide-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.subtitle{
+    color: rgb(184, 184, 184);
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 4px;
+    margin: 0;
+}
+
+.title{
+    color: white;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 70px;
+    letter-spacing: 4px;
+    line-height: 70px;
+}
+
