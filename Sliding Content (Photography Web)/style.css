@@ -6,6 +6,7 @@
     font-family: 'Shippori Mincho B1', serif;
 }
 
+
 body{
     height: 100%;
     width: 100%;
@@ -48,7 +49,6 @@ main{
 
 .menu-item{
     list-style: none;
-
 }
 
 .menu-item a{
@@ -56,9 +56,8 @@ main{
     color: white;
 }
 
-
 .bottom-socials{
-    width: 20%;
+    width: 30%;
     height: 30px;
     display: flex;
     justify-content: space-around;
@@ -83,7 +82,6 @@ main{
     opacity: 1;
 }
 
-
 .control-left{
     position: absolute;
     left: 60px;
@@ -97,10 +95,6 @@ main{
     transition: 0.5s;
     z-index: 10;
     cursor: pointer;
-}
-
-.control-left:hover , .control-right:hover{
-    opacity: 1;
 }
 
 .control-right{
@@ -118,21 +112,20 @@ main{
     cursor: pointer;
 }
 
+.control-left:hover , .control-right:hover{
+    opacity: 1;
+}
 
 .slides-container{
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
     bottom: 0;
+    right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-}
-
-#Image{
-    transition:opacity 0.3s;
 }
 
 .background-image{
@@ -142,7 +135,7 @@ main{
     opacity: 0.5;
     width: 100%;
     height: auto;
-    transition:opacity 0.3s;
+    transition: 0.3s;
 }
 
 .text-container{
@@ -159,14 +152,15 @@ main{
     transition: 0.5s;
 }
 
+
 .text-slide-one{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 600px;
-    margin: auto;
     overflow: hidden;
+    margin: auto;
 }
 
 .subtitle{
@@ -185,4 +179,3 @@ main{
     letter-spacing: 4px;
     line-height: 70px;
 }
-
