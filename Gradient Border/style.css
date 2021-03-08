@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #121212;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10rem;
+    box-sizing: border-box;
+}
+
+.gradient-border-card{
+    height: 50%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    border: 1px solid white;
+    transition: 0.1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.card-name{
+    font-size: 30px;
+    color: white;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.card-name::after{
+    content: "";
+    height: 4px;
+    top: 130%;
+    width: 70px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-description{
+    color: rgb(189, 189, 189);
+    line-height: 28px;
+    text-align: center;
+}
+
+.best{
+    --angle: 0deg;
+    border: 1px solid;
+    border-image: linear-gradient(var(--angle), #00df4a, #00abdf);
+    border-image-slice: 1;
+    box-sizing: border-box;
+    animation: 5s borderMovement linear infinite;
+    box-shadow: 0px 0px 6px #00df4a;
+}
+
+.gradient-border-card:nth-of-type(2)::after{
+    content: "";
+    height: 60px;
+    width: 60px;
+    clip-path: polygon(90% 0, 90% 100%, 50% 70%, 10% 100%, 10% 0);
+    position: absolute;
+    background: linear-gradient(#00df4a, #00abdf);
+    top: -1px;
+    right: 20px;
+}
+
+
+.gradient-border-card:hover{
+    --angle: 0deg;
+    border: 1px solid;
+    border-image: linear-gradient(var(--angle), #00df4a, #00abdf);
+    border-image-slice: 1;
+    box-sizing: border-box;
+    animation: 5s borderMovement linear infinite;
+    box-shadow: 0px 0px 6px #00df4a;
+}
+
+
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+  }
+
+@keyframes borderMovement{
+    to{
+        --angle: 360deg;
+    }
+}
