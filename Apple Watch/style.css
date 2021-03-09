@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.watches-container{
+    height: 40%;
+    width: 100%;
+    background-color: rgb(12, 12, 12);
+    box-shadow: inset 0px 100px 100px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.stripe-container{
+    height: 15%;
+    width: 160px;
+    background-color: white;
+    clip-path: polygon(5% 0, 95% 0, 100% 100%, 0% 100%);
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    margin-bottom: -3px;
+    box-shadow: inset 0 0 50px rgba(175, 175, 175, 0.7);
+    position: relative;
+}
+
+
+.stripe-container::before{
+    content: "";
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%) rotateX(50deg);
+    background-color: #121212;
+}
+.stripe-container::after{
+    content: "";
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translate(-50%, -50%) rotateX(50deg);
+    background-color: #121212;
+}
+
+
+
+
+.bottom{
+    transform: rotate(180deg);
+    margin-top: -3px;
+    margin-bottom: 0;
+}
+
+.sphere-container{
+    height: 70%;
+    width: 220px;
+    border-radius: 40px;
+    background-color: rgb(221, 221, 221);
+    box-shadow: 0px 0px 12px rgba(124, 124, 124, 0.1), inset 0px 0px 30px rgba(12, 12, 12, 0.6);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-sphere-container{
+    border-radius: inherit;
+    background-color: #000000;
+    height: 95%;
+    width: 95%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    box-sizing: border-box;
+}
+
+.inner-sphere-container::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    box-shadow: inset 0 0 2000px rgba(87, 87, 87, 0.3);
+    filter: blur(10px);
+}
+.inner-sphere-container::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.3);
+    border-radius: inherit;
+}
+
+.top-side{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-side{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.circle{
+    height: 40px;
+    width: 40px;
+    background-color: #242424;
+    border-radius: 50%;
+    margin-left: 0.5rem;
+}
+
+.circle:nth-of-type(1){
+    background-image: url(Nike.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+}
+.circle:nth-of-type(2){
+    background-image: url(Phone.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+}
+.circle:nth-of-type(3){
+    background-image: url(Cloud.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+}
+
+.right-side{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.bottom-side{
+    height: 10%;
+    width: 100%;
+    background-color: #242424;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.bottom-side h5{
+    color: rgb(192, 192, 192);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.time{
+    font-size: 80px;
+    font-style: italic;
+    font-weight: 900;
+    margin-bottom: 0;
+    color: rgb(231, 231, 231);
+    line-height: 70px;
+}
+.minute{
+    font-size: 80px;
+    font-style: italic;
+    font-weight: 900;
+    margin-bottom: 0;
+    color: transparent;
+    margin-top: 0;
+    line-height: 70px;
+    -webkit-text-stroke: 1px rgb(231, 231, 231);
+}

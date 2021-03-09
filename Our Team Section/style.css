@@ -32,7 +32,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 80px  2rem 2rem 2rem;
+    padding: 80px 2rem 2rem 2rem;
     box-sizing: border-box;
 }
 
@@ -41,7 +41,6 @@ body{
         margin-bottom: 10rem;
     }
 }
-
 
 .member-container::before{
     content: "";
@@ -73,7 +72,6 @@ body{
 .member-container:nth-of-type(3)::after{
     background-image: url(Resources/Perfil3.png);
 }
-
 
 .member-name{
     font-size: 24px;
