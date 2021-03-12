@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="vanilla-tilt.js"></script>
+    <title>Glass Credit Card</title>
+</head>
+<body>
+
+    <div class="card-container">
+        <div class="top-bar">
+            <h3 class="bank-name">Krey academy</h3>
+            <img src="MCIcon.png" alt="" class="card-type-icon">
+        </div>
+        <div class="icons-card">
+            <img src="Chip.png" alt="" class="icon">
+            <img src="CLIcon.png" alt="" class="icon">
+        </div>
+        <h3 class="card-number">1111 2222 3333 4444</h3>
+        <div class="card-info">
+            <div class="name-container">
+                <span class="title">Nombre</span>
+                <span class="name">Krey academy youtube</span>
+            </div>
+            <div class="date-container">
+                <span class="title">Válida Hasta</span>
+                <span class="name">03/21</span>
+            </div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="white-bar"></div>
+        <div class="signature-container">
+            <h5 class="title">Firma autorizada</h5>
+            <div class="signature-box"></div>
+            <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+    </div>
+    
+
+    <script>
+
+    VanillaTilt.init(document.querySelectorAll(".card-container"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.7
+        });
+
+    </script>
+
+</body>
+</html>

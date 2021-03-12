@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#b500fd, #008bfd);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+
+.card-container{
+    height: 307px;
+    width: 484px;
+    background-color: rgba(255, 255, 255, 0.14);
+    border-radius: 20px;
+    padding: 2rem;
+    box-sizing: border-box;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 3rem;
+    cursor: default;
+}
+
+.top-bar{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bank-name{
+    font-size: 25px;
+    font-weight: 700;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.icons-card{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.icon, .card-type-icon{
+    height: 100%;
+    margin-right: 1rem;
+}
+
+.card-number{
+    margin: 1rem;
+    font-size: 28px;
+    font-weight: 400;
+    word-spacing: 28px;
+    letter-spacing: 2px;
+}
+
+.card-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.date-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.title{
+    font-weight: 600;
+    font-size: 10px;
+    margin-bottom: 3px;
+}
+
+.name{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 7px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+.white-bar{
+    height: 3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    width: 484px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.signature-box{
+    height: 2rem;
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.4);
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.signature-box::after{
+    content: "000";
+    height: 100%;
+    width: 40px;
+    color: #121212;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.description{
+    font-size: 12px;
+    line-height: 22px;
+}
