@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+}
+
+.main-text{
+    font-size: 60px;
+    -webkit-text-stroke: 0.3px black;
+    color: transparent;
+    letter-spacing: 2px;
+    position: relative;
+    -webkit-background-clip: text;
+    margin: 0;
+    padding: 0;
+}
+
+.main-text::after{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    white-space: nowrap;
+    animation: loading 5s;
+    overflow: hidden;
+}
+
+@keyframes loading{
+    0%{
+        width: 0;
+    }
+    80%{
+        width: 90%;
+    }
+    100%{
+        width: 100%;
+    }
+}
