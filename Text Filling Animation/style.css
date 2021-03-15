@@ -19,7 +19,7 @@ body{
     color: transparent;
     letter-spacing: 2px;
     position: relative;
-    -webkit-background-clip: text;
+    -webkit-background-clip: text; 
     margin: 0;
     padding: 0;
 }
