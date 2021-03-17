@@ -4,8 +4,25 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: linear-gradient(140deg, #002530, #3b003b);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(140deg, #03c4ff, #ff03ff);
+    border-radius: 15px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(140deg, #0395c2, #b301b3);
+}
+
 body{
-    height: 100vh;
+    height: 200vh;
     width: 100%;
     display: flex;
     justify-content: center;
