@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+@font-face{
+    font-family: Whopper;
+    src: url(FredokaOne-Regular.ttf);
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.header{
+    height: 140px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.header-container{
+    width: 95%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon{
+    height: 100%;
+    width: auto;
+}
+
+.menu-item{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    cursor: pointer;
+    position: relative;
+}
+
+.menu-item::after{
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 0;
+    background-color: white;
+    bottom: -7px;
+    left: 0;
+    transition: all 0.5s;
+}
+
+.menu-item:hover::after{
+    width: 100%;
+}
+
+.hero-section{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::after{
+    content: "";
+    height: 120%;
+    width: 40%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+    z-index: -1;
+    border-bottom-left-radius: 70% 100%;
+    background-image: url(Back.png);
+    background-position: top right;
+    filter: brightness(50%);
+}
+
+.text-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 150px;
+    transform: translateY(-50%);
+}
+
+.second-text{
+    font-size: 46px;
+    text-transform: uppercase;
+    color: #3B2A10;
+    font-weight: 600;
+    margin-bottom: -20;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+.main-text{
+    font-size: 150px;
+    text-transform: uppercase;
+    color: #3B2A10;
+    font-family:  'Whopper';
+    margin-top: 0;
+    margin-bottom: 2rem;
+    line-height: 120px;
+}
+
+.button{
+    padding: 20px 30px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    background-color: orange;
+    text-decoration: none;
+    border-radius: 40px;
+    transition: 0.5s;
+}
+
+.button:hover{
+    background-color: rgb(195, 128, 2);
+}
+
+.hamburguer{
+    position: absolute;
+    top: 50%;
+    right: 200px;
+    height: 70%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.fries{
+    position: absolute;
+    top: 45%;
+    right: 200px;
+    height: 70%;
+    transform: translateY(-50%);
+}
