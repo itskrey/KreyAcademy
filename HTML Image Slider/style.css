@@ -47,8 +47,8 @@ main{
 
 .menu-container ul{
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
 }
 
@@ -70,11 +70,11 @@ main{
 .menu-item::after{
     content: "";
     position: absolute;
+    left: 0;
     bottom: -8px;
     height: 4px;
-    width: 0%;
+    width: 0;
     background-color: white;
-    left: 0;
     transform: skewX(-25deg);
     transition: 0.5s;
 }
@@ -108,8 +108,8 @@ main{
     position: absolute;
     top: 0;
     left: 0;
-    bottom: 0;
     right: 0;
+    bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,17 +140,14 @@ main{
     transition: 0.5s;
 }
 
-
 .text-slide-one{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     width: 800px;
     overflow: hidden;
     margin: auto;
 }
-
 
 .title{
     color: white;

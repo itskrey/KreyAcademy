@@ -1,4 +1,3 @@
-
 var numSlide = 0;
 var next = document.getElementById('Next');
 var prev = document.getElementById('Prev');
@@ -38,21 +37,19 @@ next.addEventListener("click", function(){
 });
 
 
-var arrayImages = ["Resources/Car1.jpg", "Resources/Car2.jpg", "Resources/Car3.jpg"]
+var arrayImages = ["Resources/Car1.jpg", "Resources/Car2.jpg", "Resources/Car3.jpg"];
 
 function changeImagePrev(num){
-
-    image.style.opacity = '0';
-        setTimeout(function(){
-            image.src = arrayImages[num-1];
-            image.style.opacity = '0.5';
-        },470)
+    image.style.opacity ='0';
+    setTimeout(function(){
+        image.src = arrayImages[num-1];
+        image.style.opacity = '0.5';
+    }, 470);
 }
 function changeImageNext(num){
-
-    image.style.opacity = '0';
-        setTimeout(function(){
-            image.src = arrayImages[num+1];
-            image.style.opacity = '0.5';
-        },470)
+    image.style.opacity ='0';
+    setTimeout(function(){
+        image.src = arrayImages[num+1];
+        image.style.opacity = '0.5';
+    }, 470);
 }
