@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do List</title>
+</head>
+<body>
+
+    <div class="mobile-container">
+        <div class="top-bar-container">
+            <img src="Resources/Back.png" alt="" class="icon">
+            <img src="Resources/Settings.png" alt="" class="icon">
+        </div>
+
+        <h2 class="main-title">To-Do List</h2>
+        <div class="input-container">
+            <input type="text" name="task" id="NewTask" placeholder="Añadir tarea">
+            <button onclick="addTask(document.getElementById('NewTask').value)" class="add-task">+</button>
+        </div>
+        <div class="tasks-container" id="TaskList">
+            <div class="task">
+                <input class="checkTask" type="checkbox" name="taskCompleted" id="">
+                <h5 class="task-title">Bajar la basura</h5>
+            </div>
+            
+        </div>
+    </div>
+    <script src="code.js"></script>
+</body>
+</html>
