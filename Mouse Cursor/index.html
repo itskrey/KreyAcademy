@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mouse Cursor Animation</title>
+</head>
+<body>
+    
+    <section>
+        <div class="project-container">
+            <img src="Image.jpg" alt="">
+        </div>
+        <h3 class="text">VIEW - THIS - PROJECT -</h3>
+    </section>
+
+    <script>
+        
+        const text = document.querySelector('.text');
+        text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>")
+
+
+        const container = document.querySelectorAll('span');
+        console.log(container);
+        for(let i = 0; i<container.length; i++){
+            console.log(container[i]);
+            container[i].style.transform = "rotate("+i*20+"deg)"
+        }
+
+        document.addEventListener("mousemove", function(e){
+            text.style.top = e.pageY  + "px";
+            text.style.left = e.pageX  + "px";
+        })
+
+
+    </script>
+
+</body>
+</html>
