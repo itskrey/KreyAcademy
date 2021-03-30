@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    color: #3d3d3d;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container{
+    height: 560px;
+    width: 400px;
+    box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transition: 1s linear;
+}
+
+.left-side{
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    transition: 1s linear;
+    transform-style: preserve-3d;
+    transform-origin: left;
+}
+
+.card-container:hover{
+    transform: translateX(200px);
+}
+.card-container:hover .left-side{
+    transform: rotateY(-180deg);
+    background-image: url(Imagen1.jpg);
+}
+
+.right-side{
+    position: absolute;
+    right: 0;
+}
+
+.left-side, .right-side{
+    height: 100%;
+    width: 100%;
+}
+
+.left-side{
+    background-image: url(Imagen2.jpg);
+    background-size: cover;
+}
+
+.right-side{
+    padding: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title{
+    position: relative;
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+    font-size: 17px;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.title::after{
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    height: 3px;
+    background-color: #3d3d3d;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.skill{
+    font-size: 22px;
+    margin: 0.5rem 0;
+    color: #3d3d3dbe;
+}
+
+.socials{
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+}
+
+.social-container{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-color: #3d3d3d;
+}
+
+.social-container:nth-child(3){
+    background-size: 50%;
+}
+
+.social-container:nth-child(2){
+    background-size: 70%;
+}
