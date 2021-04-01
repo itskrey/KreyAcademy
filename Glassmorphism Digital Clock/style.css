@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, #003133, #0DABAB, #056060);
+}
+
+.clock-container{
+    height: 450px;
+    width: 1000px;
+    border-radius: 50px;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10);
+    box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.time-container{
+    height: 300px;
+    width: 300px;
+    border-radius: 40px;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10);
+    box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time{
+    font-size: 180px;
+    font-weight: 600;
+    color: white;
+}
