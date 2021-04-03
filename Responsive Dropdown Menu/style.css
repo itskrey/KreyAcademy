@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.header-container{
+    height: fit-content;
+    width: 500px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main-bar{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    background-color: #121212;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
+    z-index: 12;
+}
+
+.logo{
+    height: 40%;
+}
+
+.hamburguer{
+    height: 30px;
+    width: 40px;
+    position: relative;
+    cursor: pointer;
+}
+
+.line{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 3px;
+}
+
+
+.line:nth-of-type(1){
+    top: 0;
+    transform: translateY(0);
+}
+
+.line:nth-of-type(3){
+    top: auto;
+    bottom: 0;
+    transform: translateY(0);
+}
+
+.menu-container{
+    z-index: -1;
+    width: 500px;
+    height: 0;
+    background: linear-gradient(#818181, #adadad);
+    padding: 0 1rem;
+    box-sizing: border-box;
+    transform: translateY(-15px);
+    position: relative;
+    transition: all 0.5s;
+}
+
+.open{
+    height: 250px;
+    transform: translateY(0);
+    transition: all 0.5s;
+}
+
+ul{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.menu-item{
+    list-style: none;
+    color: white;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 20px;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    width: 100%;
+    border-bottom: 1px solid #818181;
+    cursor: pointer;
+}
