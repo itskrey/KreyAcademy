@@ -27,7 +27,7 @@ body{
     align-items: center;
     padding: 0 1rem;
     box-sizing: border-box;
-    background-color: #121212;
+    background: #121212;
     box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
     z-index: 12;
 }
@@ -54,7 +54,6 @@ body{
     border-radius: 3px;
 }
 
-
 .line:nth-of-type(1){
     top: 0;
     transform: translateY(0);
@@ -69,13 +68,13 @@ body{
 .menu-container{
     z-index: -1;
     width: 500px;
-    height: 0;
+    height: 0px;
     background: linear-gradient(#818181, #adadad);
     padding: 0 1rem;
     box-sizing: border-box;
     transform: translateY(-15px);
     position: relative;
-    transition: all 0.5s;
+    transform: all 0.5s;
 }
 
 .open{
@@ -97,8 +96,8 @@ ul{
     color: white;
     height: 20%;
     display: flex;
-    align-items: center;
     justify-content: flex-end;
+    align-items: center;
     font-size: 20px;
     padding: 0 1rem;
     box-sizing: border-box;

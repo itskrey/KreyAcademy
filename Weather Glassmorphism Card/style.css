@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Hero.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.glass-card-container{
+    height: 360px;
+    width: 450px;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid rgba(255, 255, 255, 0.6);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+    box-shadow: 0px 3px 30px rgba(255, 255, 255, 0.25);
+}
+
+.first-line{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.day{
+    font-size: 34px;
+    color: white;
+    font-weight: 600;
+}
+
+.date{
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+}
+
+.temperature{
+    font-size: 54px;
+    color: white;
+    font-weight: 700;
+}
+
+.days{
+    margin-top: 2rem;
+    width: 94%;
+    height: 145px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid rgba(255, 255, 255, 0.6);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 30px rgba(255, 255, 255, 0.25);
+}
+
+.day-container{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.day-small{
+    margin: 10px;
+    color: white;
+    text-align: center;
+}
+
+.temp{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.active{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: inherit;
+}
+
+.active .icon{
+    filter: invert(1);
+    opacity: 0.8;
+}
+
+.active .day-small, .active .temp{
+    color: #3B2F2F;
+}
