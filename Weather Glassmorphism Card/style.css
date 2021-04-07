@@ -72,20 +72,20 @@ body{
     border-left: 1px solid white;
     border-right: 1px solid rgba(255, 255, 255, 0.6);
     border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 3px 30px rgba(255, 255, 255, 0.25);
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.25);
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 3px 30px rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.25);
 }
 
 .day-container{
     height: 100%;
     width: 20%;
-    display: flex;
     justify-content: center;
     align-items: center;
+    display: flex;
     flex-direction: column;
     padding: 5px;
     box-sizing: border-box;

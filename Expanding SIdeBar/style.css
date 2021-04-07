@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.navbar-container{
+    height: fit-content;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-container:hover .icon-container::after{
+    transform: scaleX(1);
+}
+
+.icon-container{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d1d1d;
+    position: relative;
+    transition: 0.5s;
+}
+
+.icon-container:hover , .icon-container:hover::after{/*Darken background*/
+    background-color: #141414;
+}
+
+.icon-container:hover::before{/*White bar*/
+    content: "";
+    height: 100%;
+    width: 5px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.icon-container::after{
+    content: "";
+    background-color: #1d1d1d;
+    height: 100%;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 100px;
+    z-index: -1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transform: scaleX(0);
+    transition: 0.5s;
+    transform-origin: left;
+}
+
+.icon-container::after:hover{
+    background-color: #141414!important;
+}
+
+.icon-container:nth-of-type(1)::after{
+    content: "Home";
+}
+.icon-container:nth-of-type(2)::after{
+    content: "Uploads";
+}
+.icon-container:nth-of-type(3)::after{
+    content: "Stats";
+}
+.icon-container:nth-of-type(4)::after{
+    content: "Account";
+}
+.icon-container:nth-of-type(5)::after{
+    content: "Settings";
+}
+.icon-container:nth-of-type(6)::after{
+    content: "Help";
+}
+
+.icon{
+    height: 40%;
+}
