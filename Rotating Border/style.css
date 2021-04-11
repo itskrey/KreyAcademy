@@ -31,27 +31,27 @@ body{
 }
 
 .button::before{
-    content: '';
+    content: "";
     width: 450px;
     padding-bottom: 450px;
     position: absolute;
-    left: 50%;
     top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 100%;
     z-index: -2;
-    background: conic-gradient(rgb(58, 255, 85) 20deg , transparent 120deg);
+    background: conic-gradient(rgb(58,255,85) 20deg, transparent 120deg);
     animation: rotate 5s linear infinite;
     transform-origin: center;
 }
 
 .button::after{
-    content: '';
+    content: "";
     position: absolute;
     inset: 0.5rem;
     background: #1f1f1f;
     z-index: -1;
-  }
+}
 
 @keyframes rotate{
     to{
