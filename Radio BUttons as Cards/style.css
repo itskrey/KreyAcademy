@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #101011;
+}
+
+.cards-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.card{
+    height: 500px;
+    width: 350px;
+    border: 1px solid white;
+    color: white;
+    padding: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.5s;
+    box-shadow: 0px 3px 30px rgba(255, 255, 255, 0.109);
+    cursor: pointer;
+}
+
+input[type=radio]{
+    display: none;
+}
+
+input[type=radio]:checked + .card{
+    border-color: aquamarine;
+    box-shadow: 0px 3px 30px rgba(2, 75, 49, 0.363);
+}
+
+input[type=radio]:checked + .card .price{
+    color: aquamarine;
+}
+
+.icon-pack{
+    height: 80px;
+    width: 80px;
+    margin-bottom: 2rem;
+    border: 2px solid white;
+    border-radius: 100%;
+    background-image: url(Basic.svg);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.icon-pack:nth-of-type(2){
+    background-image: url(Enterprise.svg);
+}
+.icon-pack:nth-of-type(3){
+    background-image: url(Online\ Store.svg);
+}
+
+.pack-title{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.pack-title::after{
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 60%;
+    background-color: rgb(182, 182, 182);
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.item{
+    margin: 0.6rem 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(218, 218, 218);
+}
+
+.price{
+    color: white;
+    font-size: 38px;
+    font-weight: 700;
+    margin-top: 2rem;
+    transition: all 0.5s;
+}
