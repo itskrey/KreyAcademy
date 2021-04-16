@@ -14,7 +14,7 @@ body{
     background: linear-gradient(150deg, #097c6e, #175c74);
 }
 
-.container-page{
+.container-page{ 
     height: 50vh;
     width: 20vw;
     border-radius: 20px;
