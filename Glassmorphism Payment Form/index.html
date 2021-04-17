@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Payment Form</title>
+</head>
+<body>
+
+    <form action="" class="payment-form">
+        <h1 class="form-title">Payment details</h1>
+        <div class="input-line">
+            <label for="name" class="input-title">Full Name</label>
+            <input type="text" name="name" id="" placeholder="Full name on card">
+        </div>
+        <div class="input-line">
+            <label for="card" class="input-title">Card Number</label>
+            <input type="text" name="card" id="Card" placeholder="Type card number with spaces" maxlength="19">
+        </div>
+        <div class="half-line">
+            <div class="input-line half">
+                <label for="date" class="input-title">Valid Until</label>
+                <input type="month" name="date" id="Date" value="2021-02" maxlength="5">
+            </div>
+            <div class="input-line half">
+                <label for="cvc" class="input-title">CVC</label>
+                <input type="password" name="cvc" id="CVC" placeholder="***" maxlength="3">
+            </div>
+        </div>
+       
+        <input type="button" value="Complete purchase">
+    </form>
+</body>
+</html>
