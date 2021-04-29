@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4e4e4e;
+}
+
+.calculator{
+    height: 600px;
+    width: 400px;
+    background-color: #1d1d1d;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.result-bar{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+.result-bar span{
+    font-size: 70px;
+}
+
+
+.controlls{
+    height: 390px;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 97.7px);
+    grid-gap: 3px;
+}
+
+input{
+    font-size: 30px;
+    color: white;
+    border: none;
+}
+
+input:focus{
+    outline: none;
+    border-color: #111111;;
+}
+
+input:hover{
+    filter: brightness(130%);
+}
+
+.operator{
+    background-color: #181818;
+}
+
+.operator-out{
+    width: 100%;
+    height: 60px;
+    background-color: #181818;
+    margin-bottom: 3px;
+}
+
+.number{
+    background-color: #111111;;
+}
+
+.result{
+    background-color: rgba(167, 110, 4, 0.541);
+}
+
