@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ ::-webkit-scrollbar {
+    width: 10px;
+}
+  
+  ::-webkit-scrollbar-track {
+    background: #121212;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(0, 135, 224);
+    border-radius: 10px;
+    transition: 0.5s;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 52, 112);
+  } 
+
+body{
+    height: 200vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.mainContent{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: linear-gradient(rgb(200, 200, 200), rgb(84, 85, 85));
+}
+
+.headerContainer{
+    height: 8vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #121212;
+}
+
+.headerContent{
+    width: 95%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoContainer{
+    height: 80%;
+    width: 40%;
+    margin-left: 2%;
+    margin-right: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo{
+    height: 50%;
+}
+
+.menuItem{
+    margin-left: 3vw;
+}
+
+.menuItem:hover{
+    opacity: 0.8;
+}
+
+.menuItemLink{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+
+/*Menu hamburguer (MOBILE ONLY)*/
+
+.menuHamburguer{
+    display: none;
+    height: 25px;
+    width: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.line{
+    left: 0;
+    top: 50%;
+    position: absolute;
+    background-color: white;
+    height: 2px;
+    width: 100%;
+    border-radius: 1px;
+}
+
+.line:first-child{
+    top: 0;
+}
+
+.line:last-child{
+    top: auto;
+    bottom: 0;
+}
+
+
+/*Media query for mobile display*/
+
+@media (max-width: 768px){
+
+    .menuHamburguer{
+        display: block;
+    }
+
+    .menuContainer{
+        background-color: #121212c7;
+        position: absolute;
+        top: 8vh;/*Header height*/
+        min-width: 40%;
+        padding-left: 5%;
+        height: 92vh;
+        right: -100%;
+        display: flex;
+        flex-direction: column;
+        transition: all 0.7s;
+    }
+
+    #Menu.open{
+        right: 0;
+    }
+
+
+    .menuItem{
+        margin-top: 3vh;
+    }
+
+    .menuItemLink{
+        font-size: 2rem;
+    }
+}
