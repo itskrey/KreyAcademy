@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swatches-container{
+    height: 40px;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.apple-swatch-container{
+    height: 100%;
+    width: 84px;
+    border-radius: 40px;
+    padding: 0.5px;
+    background: linear-gradient(#333333, #131313);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    transition: all 2s linear;
+    box-shadow: 0px 3px 8px rgba(180, 180, 180, 0.1);
+}
+
+.active{
+    justify-content: flex-end;
+    background: linear-gradient(rgb(1, 124, 1), rgb(0, 196, 0));
+}
+
+.round-swatch{
+    margin: 4px 2px;
+    background-color: white;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;    
+}
+
