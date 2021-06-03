@@ -2,6 +2,8 @@ var numSlide = 0;
 var next = document.getElementById('Next');
 var prev = document.getElementById('Prev');
 var image = document.getElementById('Image');
+var arrayImages = ["Resources/Imagen1.jpg", "Resources/Imagen2.jpg", "Resources/Imagen3.jpg"];
+
 
 //Retroceder en el slider
 prev.addEventListener("click", function(){
@@ -14,9 +16,6 @@ next.addEventListener("click", function(){
     changeImageNext(numSlide);
     numSlide++;
 });
-
-
-var arrayImages = ["Resources/Imagen1.jpg", "Resources/Imagen2.jpg", "Resources/Imagen3.jpg"];
 
 function changeImagePrev(num){
     image.style.opacity ='0';
