@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#969595, #c0c0c0);
+}
+
+.list-container{
+    height: 800px;
+    width: 550px;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.title{
+    font-family: 'Shadows Into Light', cursive;
+    color: #121212;
+    font-size: 80px;
+    margin-bottom: 1rem;
+}
+
+.tasks-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    list-style-type: none;
+}
+
+.task{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+label{
+    height: 20px;
+    width: 20px;
+    border: 1px solid #c0c0c0;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+input[type="checkbox"]:checked + label{
+    background-color: #008ae6;
+    background-image: url(Check.svg);
+    border: 1px solid #008ae6;
+}
+
+input[type="checkbox"]:checked ~ input[type="text"]{
+    opacity: 0.6;
+    text-decoration: line-through;
+}
+
+input[type="text"]{
+    width: 80%;
+    height: 100%;
+    outline: none;
+    border-bottom: 1px solid #c0c0c0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #121212;
+    font-size: 16px;
+}
