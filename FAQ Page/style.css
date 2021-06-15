@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow: hidden;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title{
+    font-size: 60px;
+    color: #121212;
+    font-weight: 700;
+    margin-bottom: 5rem;
+}
+
+.faq-content{
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.faq-container{
+    height: auto;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+    border-bottom: 1px solid #afafaf;
+}
+
+.faq-collapsible{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    box-sizing: border-box;
+    background-color: white;
+    overflow: hidden;  
+}
+
+.first{
+    border-top: 1px solid #afafaf;
+}
+
+.question{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.question.active{
+    color: rgb(35, 113, 231);
+}
+
+.faq-answer{
+    overflow: hidden;
+    transition:  0.5s;
+    height: 0;
+}
+
+.faq-answer p{
+    padding: 10px 40px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+.open{
+    height: 100px;
+    transform: translateY(0);
+}
+
+.arrow-container{
+    width: 40px;
+    height: 30px;
+    position: relative;
+}
+
+.up .line{
+    transform: translate(0%, -50%) rotate(-45deg);
+}
+.up .line:nth-of-type(2){
+    transform: translate(0%, -50%) rotate(45deg);
+}
+
+.line{
+    height: 1px;
+    width: 50%;
+    position: absolute;
+    background-color: #121212;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translate(0%, -50%) rotate(45deg);
+}
+
+.line:nth-of-type(2){
+    right: 8%;
+    left: auto;
+    transform: translate(0%, -50%) rotate(-45deg);
+}
