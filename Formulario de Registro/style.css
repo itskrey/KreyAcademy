@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+
+.register-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    padding: 2rem 3rem;
+    box-sizing: border-box;
+    
+    box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.2);
+}
+
+.input-line{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.input-field{
+    width: 300px;
+    margin-top: 0.5rem;
+    height: 35px;
+    margin-bottom: 1.2rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: #f2f2f2;
+    padding: 0 0.5rem;
+    outline: none;
+}
+
+.input-field::placeholder{
+    opacity: 0.2;
+}
+
+.button-form{
+    width: calc(300px + 1rem);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    color: #f2f2f2;
+    border: none;
+    background-color: royalblue;
+    margin-bottom: 1rem;
+    transition: 0.5s;
+}
+
+.button-form:hover{
+    background-color: rgb(45, 71, 150);
+}
+
+.second-button{
+    color: royalblue;
+    text-decoration: none;
+}
+
+.second-button:hover{
+    color: rgb(45, 71, 150);
+}
