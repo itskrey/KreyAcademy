@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+h2 {
+  text-align: center;
+  color: #555;
+  margin-bottom: 0;
+}
+
+.carousel {
+  padding: 20px;
+  -webkit-perspective: 500px;
+          perspective: 500px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carousel > * {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.carousel figure {
+  margin: 0;
+  width: 40%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.carousel figure img {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 0px;
+}
+
+.carousel figure img:not(:first-of-type) {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.carousel nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0 0;
+}
+
+.carousel nav button {
+  margin: 0 5px;
+  cursor: pointer;
+  color: #f2f2f2;
+  background: -webkit-gradient(linear, left top, left bottom, from(#5781f5), to(royalblue));
+  background: linear-gradient(#5781f5, royalblue);
+  padding: 10px 18px;
+  border: none;
+  border-radius: 4px;
+}
+
+.carousel nav button:hover {
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+}
+/*# sourceMappingURL=style.css.map */
