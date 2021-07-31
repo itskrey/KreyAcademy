@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+    box-sizing: border-box;
+}
+
+body{
+    height: auto;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    padding: 0 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.logo{
+    height: 40%;
+}
+
+.menu-container{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-item{
+    font-family: 'Syncopate', sans-serif;
+    font-size: 12px;
+    margin-left: 2.5em;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.menu-item:hover{
+    color: royalblue;
+}
+
+.image-container{
+    height: 300px;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(Hero.jpg);
+    background-size: auto 100vw;
+    background-position: top left;
+    animation: bg-movement 40s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes bg-movement{
+    0%{
+        background-position: top left;
+    }
+    50%{
+        background-position: bottom right;
+    }
+    100%{
+        background-position: top left;
+    }
+}
+
+.page-title{
+    text-transform: uppercase;
+    color: #f2f2f2;
+    font-size: 60px;
+    font-family: 'Syncopate', sans-serif;
+}
+
+.post{
+    font-size: 20px;
+    width: 70%;
+    margin: 5rem auto;
+    line-height: 28px;
+}
