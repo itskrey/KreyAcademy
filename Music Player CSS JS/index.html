@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Music Player Grid</title>
+</head>
+<body>
+
+    <div class="overlay">
+        <div class="music-player-container">
+            <div class="title-music-container">
+                <h4 class="song-title">Father</h4>
+                <span class="song-author">Diamond Eyes</span>
+            </div>
+            <div class="controls-music-container">
+                <div class="progress-song-container">
+                    <div class="progress-bar">
+                        <span class="progress"></span>
+                    </div>
+                    <div class="time-container">
+                        <span class="time-left" id="CurrentSongTime">0:57</span>
+                        <span class="time-left" id="SongLength">3:03</span>
+                    </div>
+                </div>
+                <audio controls  preload=”metadata” >
+                    <source src="Audio.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                  </audio>
+                <div class="main-song-controls">
+                    <img src="Backward.svg" alt="" id="Back10" class="icon">
+                    <img src="Play.svg" alt="" id="PlayPause" class="icon">
+                    <img src="Forward.svg" alt="" id="Plus10" class="icon">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="code.js"></script>
+</body>
+</html>
