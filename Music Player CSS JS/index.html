@@ -9,32 +9,27 @@
 </head>
 <body>
 
-    <div class="overlay">
-        <div class="music-player-container">
-            <div class="title-music-container">
-                <h4 class="song-title">Father</h4>
-                <span class="song-author">Diamond Eyes</span>
-            </div>
-            <div class="controls-music-container">
-                <div class="progress-song-container">
-                    <div class="progress-bar">
-                        <span class="progress"></span>
-                    </div>
-                    <div class="time-container">
-                        <span class="time-left" id="CurrentSongTime">0:57</span>
-                        <span class="time-left" id="SongLength">3:03</span>
-                    </div>
-                </div>
-                <audio controls  preload=”metadata” >
-                    <source src="Audio.mp3" type="audio/mpeg">
-                  Your browser does not support the audio element.
-                  </audio>
-                <div class="main-song-controls">
-                    <img src="Backward.svg" alt="" id="Back10" class="icon">
-                    <img src="Play.svg" alt="" id="PlayPause" class="icon">
-                    <img src="Forward.svg" alt="" id="Plus10" class="icon">
+    <div class="music-player-container">
+        <div class="title-music-container">
+            <h4 class="song-title">Father</h4>
+            <span class="song-author">Diamond Eyes</span>
+        </div>
+        <div class="controls-music-container">
+            <div class="progress-song-container">
+                <div class="progress-bar">
+                    <span class="progress"></span>
                 </div>
             </div>
+            <div class="time-container">
+                <span class="time-left" id="CurrentSongTime"></span>
+                <span class="time-left" id="SongLength"></span>
+            </div>
+        </div>
+        <audio controls preload="metadata" src="Audio.mp3"></audio>
+        <div class="main-song-controls">
+            <img src="Backward.svg" alt="" class="icon" id="Back10">
+            <img src="Play.svg" alt="" class="icon" id="PlayPause">
+            <img src="Forward.svg" alt="" class="icon" id="Plus10">
         </div>
     </div>
     
