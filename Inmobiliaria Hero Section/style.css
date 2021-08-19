@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 12;
+}
+
+.header-logo{
+    font-size: 42px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.menu-item{
+    color: #f2f2f2;
+    font-size: 18px;
+    margin-left: 5rem;
+    cursor: pointer;
+}
+
+.menu-item:hover{
+    opacity: 0.6;
+}
+
+.hero{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.image-hero{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(45deg, #121212b7, #121212b7), url(Hero.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-content{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.hero-title{
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.rounded-button{
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: cornflowerblue;
+    border-radius: 30px;
+    color: #f2f2f2;
+    margin-left: 5rem;
+    cursor: pointer;
+}
+
+.hero-button{
+    margin-top: 2rem;
+    margin-left: 0;
+}
+
+.search-bar{
+    height: 70px;
+    width: 700px;
+    background-color: white;
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    margin-top: 5rem;
+    position: relative;
+}
+
+.search-bar::after{
+    content: "En venta";
+    position: absolute;
+    top: -50px;
+    left: 10px;
+    height: 50px;
+    width: auto;
+    background-color: cornflowerblue;
+    font-size: 18px;
+    padding: 0 20px;
+    color: #f2f2f2;
+    font-size: 20px;
+    border-top-left-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-bar::before{
+    content: "Alquiler";
+    position: absolute;
+    top: -50px;
+    left: 120px;
+    height: 50px;
+    width: auto;
+    background-color: rgba(100, 148, 237, 0.308);
+    font-size: 18px;
+    padding: 0 20px;
+    color: #f2f2f2;
+    font-size: 20px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #121212be;
+}
+
+input{
+    height: 70%;
+    width: 43%;
+    padding: 0 10px;
+    border: 1px solid #f2f2f2;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+}
+
+.line{
+    height: 70%;
+    width: 2px;
+    background-color: #f2f2f2;
+}
+
+.button-search{
+    height: 70%;
+    width: 49px;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    background-image: url(zoom.svg);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+.button-search:hover, .rounded-button:hover{
+    background-color: rgb(55, 80, 128);
+}
