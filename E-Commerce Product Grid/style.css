@@ -31,12 +31,11 @@ body{
 }
 
 .product-container{
-    width: 23%; 
+    width: 23%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    overflow: hidden;
     margin-bottom: 5rem;
 }
 
@@ -66,7 +65,7 @@ body{
 .product-seller{
     text-transform: uppercase;
     font-size: 12px;
-    color: #999;
+    color:#999;
 }
 
 .product-title{
