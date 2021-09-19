@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Syncopate', sans-serif;
+}
+
+body{
+    height: auto;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7.3%;
+    z-index: 2;
+}
+
+.header__logo{
+    height: 25%;
+}
+
+.header__menu{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__menu-item{
+    text-transform: uppercase;
+    margin-left: 3rem;
+    color: #f2f2f2;
+    cursor: pointer;
+}
+
+.header__menu-item:hover{
+    opacity: 0.7;
+}
+
+.hero{
+    height: 100vh;
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    animation: slideshow 15s linear infinite;
+}
+
+.hero::-webkit-scrollbar{
+    display: none;
+}
+.hero {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+@keyframes slideshow {
+    0%{
+        transform: translateX(0);
+    }30%{
+        transform: translateX(0);
+    }33.33%{
+        transform: translateX(-100vw);
+    }63%{
+        transform: translateX(-100vw);
+    }
+    66.66%{
+        transform: translateX(-200vw);
+    }
+    97%{
+        transform: translateX(-200vw);
+    }    
+}
+
+.hero__image-container{
+    height: 100%;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero__image-container::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.7), transparent, rgba(0,0,0,0.8));
+}
+
+.hero__image{
+    width: 100%;
+}
+
+.hero__text-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+    z-index: 2;
+}
+
+.hero__title{
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #f2f2f2;
+}
+
+.hero__button{
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 15px 25px;
+    border-radius: 50px;
+    color: #f2f2f2;
+    background-color: #121212;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.hero__button:hover{
+    background-color: black;
+}
