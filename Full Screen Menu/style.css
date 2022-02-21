@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Monument";
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  height: 140px;
+  width: 100%;
+  padding: 0 6.7%;
+  transition: all 0.3s ease-in-out;
+}
+
+header.inverted {
+  filter: invert(1);
+  transition: all 0.3s ease-in-out;
+}
+
+.link {
+  font-family: "Monument";
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+}
+
+.link:hover::before {
+  width: 100%;
+}
+
+.link::before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 2px;
+  width: 0;
+  background-color: #121212;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-logo {
+  width: 80px;
+  filter: invert(1);
+}
+
+.menu {
+  height: 5px;
+  width: 100vw;
+  background-color: #040404;
+  position: fixed;
+  top: 50%;
+  left: 160%;
+  transform: translate(-50%, -50%);
+  padding: 0 12%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f2f2f2;
+  overflow: hidden;
+}
+
+.menu.open {
+  left: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu.open-height {
+  height: 100vh;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-wrapper,
+.menu-social {
+  list-style-type: none;
+}
+
+.menu-wrapper li {
+  width: fit-content;
+  font-size: 70px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.menu-wrapper .link::before {
+  background-color: #f2f2f2;
+  height: 5px;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.5);
+}
+
+.menu-social-container {
+  width: 35%;
+}
+
+.menu-big-text {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.menu-social {
+  padding-left: 0;
+}
+
+.menu-social .link {
+  margin-bottom: 15px;
+  margin-left: 0;
+  width: fit-content;
+}
+
+.menu-social .link::before {
+  background-color: #f2f2f2;
+  height: 2px;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.5);
+}
